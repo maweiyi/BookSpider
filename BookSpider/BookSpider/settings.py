@@ -15,6 +15,22 @@ SPIDER_MODULES = ['BookSpider.spiders']
 NEWSPIDER_MODULE = 'BookSpider.spiders'
 
 
+MONGODB_URI = "localhost"
+MONGODB_DB = "mydb"
+ITEM_PIPELINES = {
+    'tutorial.mongodb.MongoPipline': 300
+}
+
+MONGODB_SERVER = '127.0.0.1'
+MONGODB_PORT = 27017
+MONGODB_DB = 'mydb'
+MONGODB_COLLECTION = 'test'
+
+IMAGES_STORE = '/Users/maweiyi/Code/mongodb'
+IMAGES_EXPIRES = 90
+IMAGES_MIN_HEIGHT = 100
+IMAGES_MIN_WIDTH = 100
+
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'BookSpider (+http://www.yourdomain.com)'
 

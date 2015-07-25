@@ -11,4 +11,7 @@ import scrapy
 class BookspiderItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+    title = scrapy.Field()
+    url = scrapy.Field()
+    image = scrapy.Field()
+    localImage = scrapy.Field()
